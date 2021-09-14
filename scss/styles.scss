@@ -1,0 +1,202 @@
+@import "animacionFooter";
+
+$fondoNaranja: linear-gradient(rgba(228, 123, 25, 0.801),orange, red);
+
+@each $color in red,green,blue,yellow,white,violet,grey,pink,orange,brown{
+    .#{$color}{
+        background-color: #{$color};
+        border-radius: 10px;
+    }
+}
+
+
+h1{
+    padding-left: 10%;
+    padding-top: 10px;
+    font-size: 13vh;
+    /* Falta cambiarle el grosor y el tipo */
+}
+
+h2{
+    font-size: 50px;
+    background-image: $fondoNaranja;
+    border-radius: 10px;
+    border: grey;
+    padding: auto;
+}
+
+body{
+    background-color: darkgray;
+        height: 100%;
+        width: 100%;
+        background-image: url(../Assets/fondoGol.jpg);
+        background-attachment: fixed; 
+    
+}
+header{
+    background-image: linear-gradient(to right,rgba(255, 255, 255, 0.603), rgba(128, 128, 128, 0.534), rgb(58, 53, 53));
+}
+#redes{
+    background-image: radial-gradient(rgba(255, 255, 255, 0.603), rgba(128, 128, 128, 0.534), rgba(165, 160, 160, 0.466));
+}
+.redes__logo{
+    height: 6vh;
+    width: 6vh; 
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+.listaNav{
+    background-color: white;
+    border-radius: 10px;
+}
+
+.listaNav__item{
+    text-decoration: underline;
+}
+
+.botones{
+    padding-top: 5px;
+}
+.botones__inicio{
+    border-radius: 5px;
+}
+
+.botones__inicio--color1{
+    background-color: rgb(0, 0, 0);
+
+}
+.botones__inicio--color2{
+    background-image: $fondoNaranja;
+}
+
+.home{
+    background-image: $fondoNaranja;
+    text-align: center;
+}
+
+#botonInscripcion{
+    /* falta cambiarle el grosor */
+    font-weight: 400vw;
+    margin-top: 10%;
+    background-color:red;
+    height: 25vh;
+    width: 100%;
+    font-size: 7vh;
+    color:white;
+    background-color:#000000;
+    border-color: #ee0909;
+    border-width: 5px;
+    border-style:groove;
+    box-shadow: 10px 10px 50px black;
+    border-radius: 10px;
+    &:hover{    
+        background-color: red;
+        color: white;
+        padding: 4px;
+
+    }
+}
+
+#logo{
+    margin-top: 20%;
+    height: 40vh;
+    width: 100%;
+}
+.frase{
+    text-align:center;
+    color:black;
+    background-color: rgba(255, 255, 255, 0.815);
+    font-size: 200%;
+    font-weight: 500;
+    font-style: oblique;
+    letter-spacing: 5px;
+    word-spacing: 10px; 
+    border-radius: 50px; 
+    margin-left: 50px;
+    margin-right: 50px;
+    border-style: groove;
+}
+
+.aside{
+    margin-left: auto;
+    margin-right: auto;
+}
+#formularioContacto{
+    background-color: cadetblue;
+    width: 400px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    box-shadow: 7px 13px 37px black;
+}
+
+#tituloContacto{
+    font-size: 24px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.control {
+    width: 100%;
+    background-color: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 1px solid #1f53c5;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+.botonContacto {
+    width: 100%;
+    height: 45px;
+    margin-top: 15px;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    background: linear-gradient(to left top, #005aa7, #fffde4);
+    font-size: 20px;
+    &:active{
+        transform: translateY(3px);
+    }
+    &:focus{
+        height: 65px;
+    }
+    &:hover{
+        cursor: pointer;
+        transform: translateY(-3px);
+        transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+    }
+}
+
+
+.seleccionarTorneo, .tablaPosiciones, .mainComoJugar{
+    background-image: $fondoNaranja;
+    border-radius: 30px;
+}
+
+.video{
+    width: 30vw;
+}
+
+
+@media only screen and (max-width: 500px){
+    h1{
+        font-size: 9vh;
+    }
+    #botonInscripcion{
+        font-size:5vh ;
+    }
+    #logo{;
+        height: 30vh;
+        width: 150%;
+    }
+}
