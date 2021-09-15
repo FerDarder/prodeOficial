@@ -65,6 +65,10 @@
   background-color: brown;
   border-radius: 10px; }
 
+.centrar {
+  text-align: center;
+  margin: auto; }
+
 h1 {
   padding-left: 10%;
   padding-top: 10px;
@@ -89,6 +93,11 @@ body {
   background-image: linear-gradient(to left, rgba(255, 255, 255, 0.603), rgba(128, 128, 128, 0.534), #3a3535);
   width: auto; }
 
+.anchoFilas {
+  width: auto;
+  margin-left: 5%;
+  margin-right: 5%; }
+
 .redes__logo {
   height: 6vh;
   width: 6vh;
@@ -107,10 +116,6 @@ body {
 
 .botones__inicio {
   border-radius: 5px; }
-
-.home {
-  background-image: linear-gradient(rgba(228, 123, 25, 0.801), orange, red);
-  text-align: center; }
 
 #botonInscripcion {
   /* falta cambiarle el grosor */
@@ -203,12 +208,12 @@ body {
     transform: translateY(-3px);
     transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s; }
 
-.seleccionarTorneo, .tablaPosiciones, .mainComoJugar {
+.seleccionarTorneo, .tablaPosiciones, .mainComoJugar, .home {
   background-image: linear-gradient(rgba(228, 123, 25, 0.801), orange, red);
   border-radius: 30px; }
 
 .video {
-  width: 30vw; }
+  width: 100%; }
 
 @media only screen and (max-width: 500px) {
   h1 {

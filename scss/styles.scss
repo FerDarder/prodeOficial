@@ -9,6 +9,10 @@ $fondoNaranja: linear-gradient(rgba(228, 123, 25, 0.801),orange, red);
     }
 }
 
+.centrar{
+    text-align: center;
+    margin:auto;
+}
 
 h1{
     padding-left: 10%;
@@ -38,6 +42,12 @@ body{
     width: auto;
 }
 
+.anchoFilas{
+    width: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 
 .redes__logo{
     height: 6vh;
@@ -63,10 +73,6 @@ body{
     border-radius: 5px;
 }
 
-.home{
-    background-image: $fondoNaranja;
-    text-align: center;
-}
 
 #botonInscripcion{
     /* falta cambiarle el grosor */
@@ -170,13 +176,13 @@ body{
 }
 
 
-.seleccionarTorneo, .tablaPosiciones, .mainComoJugar{
+.seleccionarTorneo, .tablaPosiciones, .mainComoJugar, .home{
     background-image: $fondoNaranja;
     border-radius: 30px;
 }
 
 .video{
-    width: 30vw;
+    width: 100%;
 }
 
 
