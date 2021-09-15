@@ -102,7 +102,8 @@ body {
   height: 6vh;
   width: 6vh;
   margin-top: 5%;
-  margin-bottom: 5%; }
+  margin-bottom: 5%;
+  margin-left: 0px; }
 
 .listaNav {
   background-color: white;
@@ -156,16 +157,11 @@ body {
   margin-right: 50px;
   border-style: groove; }
 
-.aside {
-  margin-left: auto;
-  margin-right: auto; }
-
 #formularioContacto {
   background-color: cadetblue;
   width: 400px;
   padding: 30px;
   margin: auto;
-  margin-top: 100px;
   border-radius: 4px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
@@ -215,13 +211,16 @@ body {
 .video {
   width: 100%; }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   h1 {
-    font-size: 9vh; }
+    font-size: 7vh; }
   #botonInscripcion {
     font-size: 5vh; }
   #logo {
     height: 30vh;
     width: 150%; }
   .listaNav {
-    display: inline-block; } }
+    display: inline-block; }
+  .anchoFilas {
+    margin-left: 0px;
+    margin-right: 0px; } }
