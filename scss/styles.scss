@@ -1,4 +1,5 @@
 @import "animacionFooter";
+@import "diseñoRegistro";
 
 $fondoNaranja: linear-gradient(rgba(228, 123, 25, 0.801),orange, red);
 
@@ -9,20 +10,23 @@ $fondoNaranja: linear-gradient(rgba(228, 123, 25, 0.801),orange, red);
     }
 }
 
+.actual{
+    background-color: #000000;
+}
+
 .centrar{
     text-align: center;
     margin:auto;
 }
 
 h1{
-    padding-left: 10%;
+    padding-left: 5%;
     padding-top: 10px;
     font-size: 13vh;
-    /* Falta cambiarle el grosor y el tipo */
 }
 
 h2{
-    font-size: 50px;
+    font-size: 6vh;
     background-image: $fondoNaranja;
     border-radius: 10px;
     border: grey;
@@ -76,7 +80,6 @@ body{
 
 
 #botonInscripcion{
-    /* falta cambiarle el grosor */
     font-weight: 400vw;
     margin-top: 10%;
     background-color:red;
@@ -182,10 +185,13 @@ body{
     h1{
         font-size: 7vh;
     }
+    #tituloGrande{
+        font-size: 6vh;
+    }
     #botonInscripcion{
         font-size:5vh ;
     }
-    #logo{;
+    #logo{
         height: 30vh;
         width: 150%;
     }
@@ -195,5 +201,11 @@ body{
     .anchoFilas{
         margin-left: 0px;
         margin-right: 0px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px){
+    #tituloGrande{
+        font-size: 10vh;
     }
 }

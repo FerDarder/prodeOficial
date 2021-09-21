@@ -4,28 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="PRODE, APUESTAS, APUESTAS DEPORTIVAS, FUTBOL, REGISTRO">
+    <meta name="description" content="Participa por numerosos premios jugando al Prode Superliga!">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="shortcut icon" href="./Assets/favicon.png">
-    <title>Prode</title></head>
+    <title>Prode-Registrarse</title>
+</head>
 <body>
     <div class="container-fluid"> <!--Este es el container general, entra todo -->
-        <div class="container-fluid row"> <!--Fila 1, redes sociales + título principal-->
-            <div id="redes" class="col-3">
+
+        <div class="container-fluid row fila1 anchoFilas"> <!--Fila 1, redes sociales + título principal-->
+            <div class="col-3">
                 <a href="https://instagram.com/superliga_prode?utm_medium=copy_link" target="_blank"><img class="redes__logo" src="./Assets/Logo instagram.png" alt="Logo_instagram" ></a>
                 <a href="https://wa.me/5493416839326?text=Hola+me+interesa+participar+del+Prode" target="_blank"><img class="redes__logo" src="./Assets/Logo wpp.png" alt="Logo_WhatsApp" ></a>
-                <a href="#"><img class="redes__logo" src="./Assets/Logo Facebook.svg" alt="Logo_Facebook" ></a>
-                <button class="botones__inicio botones__inicio--color2"><a href="./contacto.html">Contacto</a></button>
+                <a href="https://www.facebook.com/Prode-Superliga-2019-2020-2553626718033047" target="_blank"><img class="redes__logo" src="./Assets/Logo Facebook.svg" alt="Logo_Facebook" ></a>
+                <button class="botones__inicio"><a href="./contacto.html">Contacto</a></button>
             </div>
             <header class="col-9">
                 <h1>Registrarse</h1>
             </header>
         </div>
 
-        <br> 
+        <br>
         
-        <div class="container-fluid row"> <!--Fila 2: Nav + Botones de inicio de sesion-->
-            <ul class="nav listaNav col-9">
+        <nav class="container-fluid row anchoFilas"> <!--Fila 2: Nav + Botones de inicio de sesion-->
+            <ul class="nav listaNav col-7">
                 <li class="listaNav__item">
                     <a href="./index.html" class="nav-link">Inicio</a>
                 </li>
@@ -42,12 +46,12 @@
                         <li><a class="dropdown-item" href="./libertadores.html"> Libertadores</a></li>
                         <li><a class="dropdown-item" href="./sudamericana.html">Sudamericana</a></li>
                         <li><a class="dropdown-item" href="./championsLeague.html">UEFA Champions League</a></li>
-                        <li><a class="dropdown-item" href="./eurocopa.html"> UEFA Europa League</a></li>
+                        <li><a class="dropdown-item" href="./europaLeague.html"> UEFA Europa League</a></li>
                         <li><a class="dropdown-item" href="./premierLeage.html">Premier League</a></li>
-                        <li><a class="dropdown-item" href="./copaDelRey.html">Copa del Rey</a></li>
-                        <li><a class="dropdown-item" href="./mundial2022.html">Mundial 2022</a></li>
-                        <li><a class="dropdown-item" href="./copaAmerica.html">Copa América</a></li>
-                        <li><a class="dropdown-item" href="./eurocopa.html"> Eurocopa</a></li>
+                        <li><a class="dropdown-item disabled" aria-disabled="true" href="./copaDelRey.html">Copa del Rey</a></li>
+                        <li><a class="dropdown-item disabled" aria-disabled="true" href="./mundial2022.html">Mundial 2022</a></li>
+                        <li><a class="dropdown-item disabled" aria-disabled="true" href="./copaAmerica.html">Copa América</a></li>
+                        <li><a class="dropdown-item disabled" aria-disabled="true" href="./eurocopa.html"> Eurocopa</a></li>
                     </ul>
                 </div>
 
@@ -58,28 +62,49 @@
                     <a href="./fixture.html" class="nav-link">Fixture</a>
                 </li>
                 <li class="listaNav__item">
-                    <a href="./posiciones.html" class="nav-link">Posiciones</a>
-                </li>
-                <li class="listaNav__item">
                     <a href="./comoJugar.html" class="nav-link">Como Jugar</a>
                 </li>
-                <li class="listaNav__item">
-                    <a href="./ayuda.html" class="nav-link">Ayuda</a>
-                </li>
             </ul>
-            <div class="botones col-3">
-                <button class="botones__inicio botones__inicio--color1"><a href="./iniciarSesion.html">Iniciar sesion</a></button>
-                <button class="botones__inicio botones__inicio--color1"><a href="./registrarse.html">Registrarse</a></button>
+            <div class="col-2"></div>
+            <div class="botones col-3"> 
+                <button class="botones__inicio"><a href="./iniciarSesion.html">Iniciar sesion</a></button>
+                <button class="botones__inicio actual"><a href="./registrarse.html">Registrarse</a></button>
             </div>
-        </div>
-
+        </nav>
         <br><br>
 
-        <div class="container-fluid row">
-            <h2 class="col-6">Sitio en construccion...</h2>
-        </div>
+        <main class="container-fluid row anchoFilas">
+            <div class="container">
+                <div class="login-container">
+                    <div class="register">
+                        <h3>Registrarse</h3>
+                        <form action="">
+                            <input type="text" placeholder="Nombre" class="nombre">
+                            <input type="text" placeholder="Correo" class="correo">
+                            <input type="password" placeholder="Contraseña" class="pass">
+                            <input type="password" placeholder="Confirma contraseña" class="repass">
+                            <input type="submit" class="submit" value="REGISTRARSE">
+                        </form>
+                    </div>
+                    <div class="login">
+                        <h3>Iniciar Sesión</h3>
+                        <div class="login-items">
+                            <button class="fb"><i class="fab fa-facebook-f"></i> Acceder con Facebook</button>
+                            <button class="tw"><i class="fab fa-twitter"></i> Acceder con Twitter</button>
+                            <button class="correo"><i class="fas fa-envelope"></i> Acceder con Correo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+        <br><br>
+        <footer class="container-fluid-row anchoFilas centrar">
+            <p class="frase">Una forma distinta de vivir el fútbol</p>
+        </footer>
+        <br><br>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-
 </body>
 </html>

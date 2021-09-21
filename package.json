@@ -1,7 +1,7 @@
 {
-  "name": "sass",
+  "name": "prodeOficial",
   "version": "1.0.0",
-  "description": "sass webapp",
+  "description": "Pagina de apuestas de pronosticos deportivos realizada durante el cursado de desarrollo web en coderhouse",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
