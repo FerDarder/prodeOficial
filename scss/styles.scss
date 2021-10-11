@@ -1,5 +1,6 @@
 @import "animacionFooter";
 @import "diseñoRegistro";
+@import "error404";
 
 $fondoNaranja: linear-gradient(rgba(228, 123, 25, 0.801),orange, red);
 
@@ -178,6 +179,25 @@ body{
 
 .video{
     width: 100%;
+}
+
+.fila-botones-bec{
+    height: 20vh;
+    display: flexbox;
+    align-items: center;
+}
+.botones-bec{
+    text-align: center;
+}
+
+.lista-grupos{
+    width: 100vw;
+    background-image: $fondoNaranja;
+    padding: 20px;
+    border-radius: 20px;
+    display: inline-block;
+    height: auto;
+    
 }
 
 
