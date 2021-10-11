@@ -134,7 +134,9 @@ body {
     top: unset;
     bottom: -25px;
     left: 50%;
-    transform: translateX(-50%) rotate(90deg); } }
+    transform: translateX(-50%) rotate(90deg); }
+  .frase-login, .login-container {
+    margin-top: 150px; } }
 
 .body-404 {
   margin: 0;
